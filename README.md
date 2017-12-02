@@ -1,6 +1,8 @@
 # AnagramChecker
 Write a program that checks if the two passed command-line arguments are anagrams.
 
+[![Build Status](https://travis-ci.org/kwaxi/AnagramChecker.svg?branch=master)](https://travis-ci.org/kwaxi/AnagramChecker)
+
 The program shall support the following command-line interface:
 
 ```shell
