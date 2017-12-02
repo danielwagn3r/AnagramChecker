@@ -20,6 +20,8 @@ For each natural number, there is only one way to represent it as a product of p
 
 Create a table that maps each allowed character to a unique prime number, for example:
 
+| character | prime |
+| :---: | :---: |
 | E | 2 |
 | R | 3 |
 | T | 5 |
