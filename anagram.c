@@ -86,13 +86,27 @@ int main(int argc, char **argv)
     uint64_t word1 = 1;
     for (int i = 0; i < strlen(argv[1]); i++)
     {
-        word1 = word1 * primes[argv[1][i]];
+        uint64_t t;
+
+        if (__builtin_mul_overflow(word1, primes[argv[1][i]], &t))
+        {
+            return -1;
+        }
+
+        word1 = t;
     }
 
     uint64_t word2 = 1;
     for (int i = 0; i < strlen(argv[2]); i++)
     {
-        word2 = word2 * primes[argv[2][i]];
+        uint64_t t;
+
+        if (__builtin_mul_overflow(word2, primes[argv[2][i]], &t))
+        {
+            return -1;
+        }
+
+        word2 = t;
     }
 
     anagram = word1 == word2;
