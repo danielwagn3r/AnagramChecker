@@ -117,7 +117,7 @@ int main(int argc, char **argv)
     {
         fprintf(stdout, " not");
     }
-    
+
     fprintf(stdout, " anagrams");
 
     if (anagram)
